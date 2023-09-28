@@ -47,3 +47,8 @@ Udemy 스터디 저장소
 > 섹션7 boss Challenge 완료
 
 > DispatchQueue를 이용한 지연기능 활용
+
+[23.9.28] (섹션8 진행중)
+> Arributes inspector에서 Line을 0으로 만들면 해당하는 Label의 줄 제한이 없어진다
+> 1 이상부터는 줄 수 의 제한을 주며 폰트 사이즈를 줄임
+> AutoShrink에서 미니멈 폰트를 설정해 줄 수도 있다 

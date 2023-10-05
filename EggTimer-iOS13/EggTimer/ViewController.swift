@@ -15,11 +15,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var timerBar: UIProgressView!
     
-    let eggTimes = ["Soft":3,"Medium":7,"Hard":12]
+    let eggTimes = ["Soft":20,"Medium":40,"Hard":60]
     var timer: Timer?
     var fixTime = 0
     var second = 0
     func startTimer(second: Int) {
+        
         timer?.invalidate()
         fixTime = second
         self.second = second
@@ -54,7 +55,7 @@ class ViewController: UIViewController {
     }
     
     func playSound() {
-        let url = Bundle.main.url(forResource:"alarm_sound", withExtension: "wav")
+        let url = Bundle.main.url(forResource:"alarm_sound", withExtension: "mp3")
         player = try! AVAudioPlayer(contentsOf: url!)
         player.play()
     }

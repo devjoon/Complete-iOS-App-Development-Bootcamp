@@ -75,3 +75,11 @@ as는 데스티네이션의 뷰 컨트롤러가 (!) 를사용하여 확실히 Re
 ResultViewController안에있는 프로퍼티인 bmiValue에 접근을 할 수 있게 해준다
 
 [23.11.6] (섹션 11 완료)
+
+[23.11.7] (섹션 12 완료)
+> UIButton의 .isSelected를 이용하여 선택상태 표시
+> UITextField의 .endEditing(true) 이용하여 글씨 입력 허용가능
+> String(format: "%.2f", data) // .숫자f 를 이용하여 소숫점 어디까지 보여줄 것인가 정하고 String 반환
+> prepare를 이용하여 다음 뷰 컨트롤러에 데이터 전달가능
+> performSegue(withIdentifier:, sender:) 이용하여 세그방식 화면전환가능
+> .dismiss 이용하여 push된 화면 pop 해줄수 있다.

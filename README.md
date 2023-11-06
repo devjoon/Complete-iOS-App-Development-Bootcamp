@@ -67,3 +67,9 @@ Udemy 스터디 저장소
 
 [23.10.12] (섹션11 진행중)
 > Slider 사용, String(format:) 구문을 이용하여 소숫점 처리 ,pow(,) 를 이용한 제곱사용
+
+[23.11.5] (섹션11 진행중)
+> segue 화면 전환 사용, CGRect를 이용하여 코드로 오브젝트의 크기와 위치를 정할수 있다
+> segue.destination as! ResultViewController의 해석
+as는 데스티네이션의 뷰 컨트롤러가 (!) 를사용하여 확실히 ResultViewController일 것이다 라는 것을 나타내주어
+ResultViewController안에있는 프로퍼티인 bmiValue에 접근을 할 수 있게 해준다

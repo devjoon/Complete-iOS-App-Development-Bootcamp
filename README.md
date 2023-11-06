@@ -73,3 +73,5 @@ Udemy 스터디 저장소
 > segue.destination as! ResultViewController의 해석
 as는 데스티네이션의 뷰 컨트롤러가 (!) 를사용하여 확실히 ResultViewController일 것이다 라는 것을 나타내주어
 ResultViewController안에있는 프로퍼티인 bmiValue에 접근을 할 수 있게 해준다
+
+[23.11.6] (섹션 11 완료)

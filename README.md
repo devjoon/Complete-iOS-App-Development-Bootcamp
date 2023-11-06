@@ -70,16 +70,24 @@ Udemy 스터디 저장소
 
 [23.11.5] (섹션11 진행중)
 > segue 화면 전환 사용, CGRect를 이용하여 코드로 오브젝트의 크기와 위치를 정할수 있다
+
 > segue.destination as! ResultViewController의 해석
-as는 데스티네이션의 뷰 컨트롤러가 (!) 를사용하여 확실히 ResultViewController일 것이다 라는 것을 나타내주어
-ResultViewController안에있는 프로퍼티인 bmiValue에 접근을 할 수 있게 해준다
+
+> as는 데스티네이션의 뷰 컨트롤러가 (!) 를사용하여 확실히 ResultViewController일 것이다 라는 것을 나타내주어
+
+> ResultViewController안에있는 프로퍼티인 bmiValue에 접근을 할 수 있게 해준다
 
 [23.11.6] (섹션 11 완료)
 
 [23.11.7] (섹션 12 완료)
 > UIButton의 .isSelected를 이용하여 선택상태 표시
+
 > UITextField의 .endEditing(true) 이용하여 글씨 입력 허용가능
+
 > String(format: "%.2f", data) // .숫자f 를 이용하여 소숫점 어디까지 보여줄 것인가 정하고 String 반환
+
 > prepare를 이용하여 다음 뷰 컨트롤러에 데이터 전달가능
+
 > performSegue(withIdentifier:, sender:) 이용하여 세그방식 화면전환가능
+
 > .dismiss 이용하여 push된 화면 pop 해줄수 있다.

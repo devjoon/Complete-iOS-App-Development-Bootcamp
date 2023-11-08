@@ -91,3 +91,37 @@ Udemy 스터디 저장소
 > performSegue(withIdentifier:, sender:) 이용하여 세그방식 화면전환가능
 
 > .dismiss 이용하여 push된 화면 pop 해줄수 있다.
+
+[23.11.9] (섹션 13 진행중)
+> 다크모드에 전환 가능한 커스텀 색상 만들기 , 벡터 이미지를 이용 화질저하 방지
+
+> 텍스트필드의 구성요소 확인 ( Capitalization : 대문자 관련기능 , 리턴키 변경과 키보드 유형도 선택이 가능하다 )
+
+> UITextFieldDelegate = UITextField와 NSTextField 등의 텍스트 입력 필드와 상호 작용하는 데 사용되는 프로토콜. 이 프로토콜을 채택하여 텍스트 필드의 동작을 커스터마이즈하고 사용자 입력을 처리할 수 있다.
+
+> searchTextField.delegate = self 가 의미하는바는
+서치텍스트 필드가 델리게이트를 통해 self 즉 WeatherViewController에 보고 해야한다는 뜻
+
+> textFieldShouldReturn ⇒ 뷰 컨트롤러가 사용자 키보드의 반환키를 눌렀을때 어떻게 할지 델리게이트를 통해서 리턴으로 보고하는 메서드 searchTextField.endEditing 을 이용하여 true 해두면 입력후 리턴하면 키보드가 해제됨
+
+> textFieldDidEndEditing 이용해보기 입력이 끝나면 작동 , 이를통해 GO버튼을 눌렀을때 클리어 하는 방법 구상
+
+> textFieldShouldEndEditing 뷰컨트롤러 사용자가 다른곳을 탭 한다면 에디팅이 끝날수도 있는 상황
+”뷰 컨트롤러! 사용자가 방금 다른곳을 탭했어요” 와 같은 델리게이트 이용
+Should가 들어간 애들은 Bool타입을 반환하여 델리게이트 이용을 할 수 있다
+
+> ShouldEndEditing을 bool값으로 편집모드를 끝낼지를 결정해주고
+이를 바탕으로 false면 편집모드 유지 , true가 반환되었다면 DidEndEditing이 실행된다
+
+> URLSession 네트워킹 순서
+
+> 1. create a URL
+
+> 2. create a URLSession : 세선을 만드는건 네트워킹을 하기위한 준비작업을 하는것, .default 구성은 기본적인 캐시, 쿠키, 및 기타 구성을 사용하며, 일반적인 네트워크 작업에 적합하다
+
+> 3. Give the session a task : .dataTask(with: url, completionHandler) 형태로 쓰이며 이 과정이 네트워크와 통신하는과정이며
+마냥 기다릴수는 없기때문에 작업이 완료되면 컴플리션 핸들러가 작동하게 된다
+
+> 4. start the task
+
+> handle로 넘겨받은 데이터는 변환 과정을 거쳐야하는데 데이터를 옵셔널 바인딩후(safeData생성) String(data: safeData, encodingL .utf8) 형태로 사용한다

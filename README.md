@@ -128,3 +128,6 @@ Should가 들어간 애들은 Bool타입을 반환하여 델리게이트 이용�
 
 [23.11.16] (섹션 13 완료)
 > delegate의 사용 , CLLocationManagerDelegate의 이해
+
+[23.11.29] (섹션 15 진행중)
+> CocoaPod 사용, 라이브러리의 사용, Firebase 사용

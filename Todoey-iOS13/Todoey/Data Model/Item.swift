@@ -8,7 +8,14 @@
 
 import Foundation
 
+<<<<<<< HEAD
 class Item: Codable {
     var title: String = ""
     var done: Bool = false
+=======
+class Item {
+    var title: String = ""
+    var done: Bool = false
+    
+>>>>>>> f1eca9bad95b61428f4edb87e525678d025df6ca
 }
